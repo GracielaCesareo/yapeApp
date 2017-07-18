@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="static/materialize-css/dist/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>Y A P E</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div>
+          <img class="icono" src="../img/icons/phone.png" alt="">
+      </div>
+    </div>
+    <h5 class="center-align">Para comenzar validemos tu número</h5>
+    <p class="center-align">Resivirás un SMS con un código de validadción</p>
+    <div class="input-field col s6">
+      <i class="material-icons prefix">stay_current_portrait</i>
+      <input id="icon_prefix" type="text" class="validate">
+      <label for="icon_prefix">(+52)</label>
+    </div>
+    <form action="#">
+      <p class="center-align">
+        <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+        <label for="filled-in-box">Acepto los <a href="#">Terminos y condiciones</a></label>
+      </p>
+      <div class="row">
+        <div class="col s6 offset-s3">
+          <a class="btn disabled">Continuar</a>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script src="static/jquery/dist/jquery.min.js"></script>
+  <script src="static/materialize-css/dist/js/materialize.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
