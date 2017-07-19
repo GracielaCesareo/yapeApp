@@ -1,12 +1,14 @@
-/*.btn-registro{
-  width: 100%;
-}*/
-
-h4{
-
-}
-
-.btn{
+.btn, .btn-large{
   background-color: #fbd43b;
-  width:100%;
 }
+#btn-registro{
+  width: 100%;
+}
+ .carousel.carousel-slider .carousel-item {
+  min-height: 350px;
+ }
+
+/*.icono{
+  width: 50%;
+  height: 50%;
+}*/

@@ -1,11 +1,36 @@
+/*estilos pantalla 1*/
+.carousel{
+  height: 500px !important;
+
+}
+.carousel .carousel-item{
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+.carousel .carousel-item>img{
+  width: 80% !important;
+
+}
 .btn, .btn-large{
   background-color: #fbd43b;
 }
 #btn-registro{
   width: 100%;
 }
-
-/*.icono{
-  width: 50%;
-  height: 50%;
+/*estilos pantalla 2*/
+.phone-icon{
+  display: block;
+  margin: 0 auto;
+  width: 50% !important;
+  height: 50% !important;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+#continuar{
+  margin-top: 10%;
+}
+/*estilos pantalla 3*/
+/*.mini-icon{
+  width: 70%;
+  height: 70%;
 }*/

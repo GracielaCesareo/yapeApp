@@ -13,24 +13,24 @@
   <div class="container">
     <div class="row">
       <div>
-          <img class="phone-icon" src="../img/icons/phone.png" alt="">
+          <img class="icono" src="../img/icons/phone.png" alt="">
       </div>
     </div>
     <h5 class="center-align">Para comenzar validemos tu número</h5>
-    <p class="center-align">Recibirás un SMS con un código de validadción</p>
-    <form id="form-phone-number" action="#">
-      <div class="input-field col s6">
-        <i class="material-icons prefix">stay_current_portrait</i>
-        <input class="phone-number" id="icon_prefix" type="text" required>
-        <label for="icon_prefix">(+52)</label>
-      </div>
+    <p class="center-align">Resivirás un SMS con un código de validadción</p>
+    <div class="input-field col s6">
+      <i class="material-icons prefix">stay_current_portrait</i>
+      <input id="icon_prefix" type="text" class="validate">
+      <label for="icon_prefix">(+52)</label>
+    </div>
+    <form action="#">
       <p class="center-align">
-        <input type="checkbox" class="filled-in" id="terminos" />
+        <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
         <label for="filled-in-box">Acepto los <a href="#">Terminos y condiciones</a></label>
       </p>
       <div class="row">
         <div class="col s6 offset-s3">
-          <a id="continuar" type="submit" class="btn disabled" href="pantalla3.html">Continuar</a>
+          <a id="continuar" class="btn disabled">Continuar</a>
         </div>
       </div>
     </form>
@@ -38,6 +38,6 @@
 
   <script src="static/jquery/dist/jquery.min.js"></script>
   <script src="static/materialize-css/dist/js/materialize.min.js"></script>
-  <script src="assets/js/pantalla2.js"></script>
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
