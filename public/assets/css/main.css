@@ -30,7 +30,22 @@
   margin-top: 10%;
 }
 /*estilos pantalla 3*/
-/*.mini-icon{
-  width: 70%;
-  height: 70%;
-}*/
+.mini-icon{
+  width: 80%;
+  height: 80%;
+}
+/*estilos pantalla 3*/
+.check{
+  padding-top: 50%;
+}
+.yape{
+  margin-bottom: 50%;
+}
+#pantalla5{
+  height: 100%;
+  background-color: #fbd43b;
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}

@@ -1,36 +1,48 @@
 var cargarPagina = function() {
   $('.phone-number').keyup(validarTel);
-  // $('#terminos').change(validarCheck);
-  $('#continuar').click(agregarNum);
+  $('#terminos').change(validarCheck);
+  $('#phone-form').submit(agregarNum)
+  $('#continuar').click(sigPagina);
 }
 var $continuar = $('#continuar')
 
-
+//
 var validarTel = function (){
-  if ($(this).val().length == 9) {
-    $continuar.removeClass('disabled')
+  if ($(this).val().length == 10) {
+    alert("Debes aceptar los terminos y condiciones");
   }
 }
 
-// var validarCheck = function () {
-//   if($(this).is(':cheked')) {
-//     $continuar.removeClass('disabled')
-//   }
-// }
+var validarCheck = function () {
+  if($(this).is(':checked')) {
+    // console.log("checked!!!");
+    $continuar.removeClass('disabled');
+  } else {
+    return false;
+  }
+}
+
+var sigPagina = function () {
+  location.href = "pantalla3.html"
+}
 
 var agregarNum = function (e) {
-e.preventDefault();
+  e.preventDefault();
   var telefono = $('.phone-number').val();
+  var terminos = $('#terminos');
   $.post('/api/registerNumber', {
     phone: telefono,
-    terms: true
-  }).then(function(response){
-    alert(response.data.code);
-    // console.log(response.data.code)
-  }).catch(function (response) {
-    console.log("error!!!");
-  })
-}
+    terms: terminos.is(':checked')
+  }, function (response) {
+    if(response.sucess != true) {
+      console.log(response.message);
+    }
+    else {
+      console.log(response.data.code);
+    }
+  });
+};
+
 
 
 
