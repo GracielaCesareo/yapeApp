@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="static/materialize-css/dist/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css">
-  <title>Document</title>
+  <title>Y A P E</title>
 </head>
 <body>
   <div class="container">
@@ -16,50 +16,28 @@
     </div>
     <h4 class="center-align">Crea tu usuario Yape</h4>
     <p class="center-align">Ingresa un npombre, email y clave de usuario</p>
-    <form class="">
-      <div class="input-field row">
-        <div class="col s2">
+    <form id="form-data">
+      <div class="container">
+        <div class="input-field row">
+          <img class="mini-icon" src="img/icons/user.png" alt="">
+          <input id="name" type="text" class="validate">
+          <label for="name">Nombre</label>
+        </div>
+        <div class="input-field row">
+          <img class="mini-icon" src="img/icons/message-gray.png" alt="">
+          <input id="mail" type="email" class="validate">
+          <label for="mail">correo@ejemplo</label>
+        </div>
+        <div class="input-field row">
           <img class="mini-icon" src="img/icons/lock.png" alt="">
-        </div>
-        <div class="col s10">
-          <input id="icon_prefix" type="text" class="validate">
-          <label for="icon_prefix">Nombre</label>
+          <input id="key" type="password" class="validate">
+          <label for="key">Ingresa clave de 6 digitos</label>
         </div>
       </div>
-      <div class="input-field row">
-        <div class="col s2">
-          <img class="mini-icon" src="img/icons/lock.png" alt="">
-        </div>
-        <div class="col s10">
-          <input id="icon_prefix" type="email" class="validate">
-          <label for="icon_prefix">correo@ejemplo</label>
-        </div>
-      </div>
-      <div class="input-field row">
-        <div class="col s2">
-          <img class="mini-icon" src="img/icons/lock.png" alt="">
-        </div>
-        <div class="col s10">
-          <input id="icon_prefix" type="email" class="validate">
-          <label for="icon_prefix">Ingresa clave de 6 digitos</label>
-        </div>
-      </div>
-      <!-- <div class="input-field">
-        <input id="icon_prefix" type="text" class="validate">
-        <label for="icon_prefix">Nombre</label>
-      </div>
-      <div class="input-field">
-        <input id="icon_prefix" type="email" class="validate">
-        <label for="icon_prefix">correo@ejemplo</label>
-      </div>
-      <div class="input-field">
-        <input id="icon_prefix" type="password" class="validate">
-        <label for="icon_prefix">Ingresa clave de 6 digitos</label>
-      </div> -->
       <p class="center-align">Cuida esta clave como oro, es tu acceso a Yape</p>
       <div class="row">
         <div class="col s8 offset-s3">
-          <button id="continuar" type="submit" class="btn disabled">CREAR CUENTA</button>
+          <button id="cuenta" type="submit" class="btn disabled">CREAR CUENTA</button>
         </div>
       </div>
     </form>
@@ -69,6 +47,6 @@
 
   <script src="static/jquery/dist/jquery.min.js"></script>
   <script src="static/materialize-css/dist/js/materialize.min.js"></script>
-  <script src="assets/js/app.js"></script>
+  <script src="assets/js/pantalla4.js"></script>
 </body>
 </html>

@@ -23,29 +23,32 @@
   margin: 0 auto;
   width: 50% !important;
   height: 50% !important;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 5%;
+  padding-bottom: 3%;
 }
 #continuar{
   margin-top: 10%;
 }
 /*estilos pantalla 3*/
 .mini-icon{
-  width: 80%;
-  height: 80%;
+  width: 6%;
+  height: 6%;
 }
-/*estilos pantalla 3*/
+/*estilos pantalla 4*/
+.input-field label {
+  text-align: center;
+}
+/*estilos pantalla 5*/
 .check{
   padding-top: 50%;
 }
 .yape{
-  margin-bottom: 50%;
+  margin-bottom: 70%;
 }
 #pantalla5{
   height: 100%;
   background-color: #fbd43b;
-  background-position: center center;
-  background-repeat:  no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
 }

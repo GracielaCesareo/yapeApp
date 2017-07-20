@@ -8,13 +8,15 @@ var $continuar = $('#continuar')
 
 //
 var validarTel = function (){
-  if ($(this).val().length == 10) {
-    alert("Debes aceptar los terminos y condiciones");
+  if ($('.phone-number').val().length == 10) {
+    return true
+    // alert("Debes aceptar los terminos y condiciones");
   }
 }
 
 var validarCheck = function () {
   if($(this).is(':checked')) {
+    validarTel();
     // console.log("checked!!!");
     $continuar.removeClass('disabled');
   } else {
@@ -34,16 +36,17 @@ var agregarNum = function (e) {
     phone: telefono,
     terms: terminos.is(':checked')
   }, function (response) {
-    if(response.sucess != true) {
-      console.log(response.message);
+    if(response) {
+      alert("Tu codigo es" + response.data.code);
+      localStorage.setItem("codigo", response.data.code );
+      localStorage.setItem("telefono", response.data.phone);
+      // console.log(response.data.code);
     }
     else {
-      console.log(response.data.code);
+      console.log("error");
     }
   });
 };
-
-
 
 
 $(document).ready(cargarPagina);

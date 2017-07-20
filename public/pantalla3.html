@@ -17,16 +17,17 @@
     <h4 class="center-aling">Ahora ingresa tu código</h4>
     <p class="center-aling">Enviamos un SMS con el código de validación al numero <span> </span> </p>
     <form action="#">
-      <div class="input-field row">
-        <div class="col s2">
-          <img class="mini-icon" src="img/icons/lock.png" alt="">
-        </div>
-        <div class="col s10">
-          <input id="icon_prefix" type="text" class="validate">
-          <!-- <label for="icon_prefix">- - - -</label> -->
-        </div>
+      <div class="input-field">
+        <img class="mini-icon" src="img/icons/lock.png" alt="">
+        <input id="code-number" type="text">
+        <label for="code-number">- - - - - -</label>
       </div>
     </form>
+    <div class="row">
+      <div class="col s8 offset-s3">
+        <a href="pantalla4.html" id="code-count" class="btn disabled">CREAR CUENTA</a>
+      </div>
+    </div>
     <p class="center-aling">Reintentar en</p>
   </div>
   <script src="static/jquery/dist/jquery.min.js"></script>
