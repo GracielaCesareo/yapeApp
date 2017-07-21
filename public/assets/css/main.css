@@ -1,7 +1,6 @@
 /*estilos pantalla 1*/
 .carousel{
   height: 500px !important;
-
 }
 .carousel .carousel-item{
   padding-top: 15%;
@@ -51,4 +50,30 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+/*estilos pantalla final*/
+.ligth-purple{
+  background-color: #451e36;
+}
+.engine{
+  float: right;
+}
+.white-text{
+  color: #FFF;
+}
+.turq-text{
+  color: #00c3a3;
+}
+.rigth{
+  float: left;
+}
+.mostrar{
+  margin-left: 35%;
+}
+.dark-purple{
+  background-color: #38052a;
+}
+.img-icons{
+  width: 50%;
+  height: 50%;
 }

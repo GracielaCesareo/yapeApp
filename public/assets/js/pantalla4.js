@@ -3,7 +3,7 @@ var cargarPagina = function() {
   $('#mail').keyup(validarCorreo);
   $('#key').keyup(validarClave);
   $('#form-data').submit(agregarUsuario);
-  $('cuenta').click(nuevaPagina);
+  $('#cuenta').click(nuevaPagina);
 
 }
 
@@ -32,7 +32,7 @@ var validarClave = function (){
 }
 
 var nuevaPagina = function () {
-  location.href = "pantalla4.html"
+  location.href = "pantalla5.html"
 }
 
 var agregarUsuario = function(e) {
@@ -44,6 +44,7 @@ var agregarUsuario = function(e) {
     "name": nombre.val()
   },function (response) {
     if(response){
+      alert(response.message);
       console.log(response.message);
     }else{
       console.log("error!!!");

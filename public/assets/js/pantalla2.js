@@ -37,7 +37,7 @@ var agregarNum = function (e) {
     terms: terminos.is(':checked')
   }, function (response) {
     if(response) {
-      alert("Tu codigo es" + response.data.code);
+      alert("Tu codigo es " + response.data.code);
       localStorage.setItem("codigo", response.data.code );
       localStorage.setItem("telefono", response.data.phone);
       console.log(response.data.code);
