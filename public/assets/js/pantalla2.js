@@ -40,7 +40,8 @@ var agregarNum = function (e) {
       alert("Tu codigo es" + response.data.code);
       localStorage.setItem("codigo", response.data.code );
       localStorage.setItem("telefono", response.data.phone);
-      // console.log(response.data.code);
+      console.log(response.data.code);
+      console.log(response.data.phone);
     }
     else {
       console.log("error");

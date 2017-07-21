@@ -3,13 +3,15 @@ var cargarPagina = function() {
   $('#mail').keyup(validarCorreo);
   $('#key').keyup(validarClave);
   $('#form-data').submit(agregarUsuario);
-  // $('cuenta').
+  $('cuenta').click(nuevaPagina);
 
 }
 
 var nombre = $('#name');
 var correo = $('#mail');
 var clave = $('#key');
+
+var  telefono = localStorage.getItem('telefono');
 
 var validarNombre = function (){
   if (nombre.val().length > 3) {
@@ -29,25 +31,26 @@ var validarClave = function (){
   }
 }
 
+var nuevaPagina = function () {
+  location.href = "pantalla4.html"
+}
+
 var agregarUsuario = function(e) {
   e.preventDefault();
   $.post('/api/createUser', {
-    email: mail,
-    password: clave,
-    name: nombre
+    "phone": telefono,
+    "email": correo.val(),
+    "password": clave.val(),
+    "name": nombre.val()
   },function (response) {
-    console.log(response);
+    if(response){
+      console.log(response.message);
+    }else{
+      console.log("error!!!");
+    }
   });
 }
 
 
 
 $(document).ready(cargarPagina);
-
-
-
-// router.post('/createUser',(req, res) => {
-//     const phone = req.body.phone;
-//     const name = req.body.name;
-//     const email = req.body.email;
-//     const password = req.body.password;

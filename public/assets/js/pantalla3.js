@@ -21,10 +21,4 @@ var nuevaPantalla = function () {
   location.href = "pantalla4.html"
 }
 
-// var nuevoCodigo = function () {
-//
-// }
-
-
-
 $(document).ready(cargarPagina);
